@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration</title>
+
+    <!-- Link common CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- COMMON NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-title">Experiments</div>
+
+        <div class="nav-links">
+            <a href="ex1.1.html" class="nav-link active">Ex 1.1</a>
+            <a href="ex1.2.html" class="nav-link">Ex 1.2</a>
+            <a href="ex1.3.html" class="nav-link">Ex 1.3</a>
+            <a href="ex2.1.html" class="nav-link">Ex 2.1</a>
+            <a href="ex2.2.html" class="nav-link">Ex 2.2</a>
+        </div>
+
+    </nav>
+
+    <h1>Student Registration</h1>
+
+    <form>
+        <table cellpadding="10">
+
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input class="submit" name="name" required minlength="9" maxlength="50" pattern="[A-Za-z ]+"
+                        title="Name must contain letters only">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input class="submit" type="email" name="email" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input class="submit" type="number" name="age" required min="18" max="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Register" onclick="ffunt1()">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
